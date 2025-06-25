@@ -1,0 +1,28 @@
+<div class="card">
+  <div class="card-body">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <div>
+        <h5>Lista de Productos</h5>
+        <p class="text-muted">Aquí puedes ver y administrar todos los productos disponibles.</p>
+      </div>
+      <button class="btn btn-primary" onclick="window.location.href='/agregar-producto.html'">
+        <i class="fas fa-plus"></i> Agregar Producto
+      </button>
+    </div>
+
+    <table class="table table-striped table-hover align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th>Nombre</th>
+          <th>Categoría</th>
+          <th>Stock</th>
+          <th>Precio</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-productos">
+        <!-- Aquí  se insertarán las filas dinámicamente desde productos.js -->
+      </tbody>
+    </table>
+  </div>
+</div>
